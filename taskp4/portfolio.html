@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Page</title>
+     /* Adding a favicon image to the webpage created */
+    <link rel="icon" type="image/jpg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAbo-JgiG3sYqRhcOSG6F33HknvcngTa2qciyRJpEkw&s=10">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: #e2d0b9;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 1100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #2b2b2b;
+            background-color: #fdf6ec;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .section-divider {
+            border: none;
+            border-top: 2px solid #7dd3c0;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            gap: 30px;
+            background-color: #1f2937;
+            color: white;
+            padding: 15px 30px;
+            font-weight: 600;
+        }
+
+        .navbar p {
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .navbar p:hover {
+            color: #7dd3c0;
+        }
+
+        /*banner*/
+        .banner-container {
+            position: relative;
+        }
+
+        .banner {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hover-text {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.65);
+            color: white;
+            padding: 15px;
+        }
+
+        .banner-container:hover .hover-text {
+            display: block;
+        }
+
+        /* About Me Section */
+        .about {
+            background-color: #fdf6ec;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .about h1 {
+            margin-top: 0;
+        }
+
+        .about img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #7dd3c0;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 1.5;
+        }
+
+        .about hr {
+            width: 80px;
+            border: 1px solid #7dd3c0;
+            margin: 20px auto;
+        }
+
+        /* My Work Section */
+        .work-heading {
+            text-align: center;
+            padding-top: 30px;
+            background-color: #fdf6ec;
+        }
+
+        /* Gallery section creating using Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 20px 30px 40px;
+            background-color: #f3dede;
+        }
+
+        /* fitting the images  */
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition-duration: 0.3s;
+        }
+
+        /* changing the behavior of the images when hovered upon */
+        .gallery img:hover {
+            transform: scale(1.08);
+            border-radius: 14px;
+            box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* portfolio work*/
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 30px auto 0;
+            text-align: left;
+            background-color: #abd3c6;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .portfolio-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .portfolio-item img {
+            width: 240px;
+            height: 240px;
+            object-fit: contain;
+            border-radius: 8px;
+            border: none;
+            margin-bottom: 0;
+            background-color: #f5f2ee;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .portfolio-text h3 {
+            margin: 0 0 6px 0;
+            font-size: 18px;
+        }
+
+        .portfolio-text p {
+            margin: 0;
+            font-size: 15px;
+            line-height: 1.5;
+            max-width: none;
+        }
+
+        /* Responsive Gallery Layout */
+        @media (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    /* Navigation Bar */
+    <div class="navbar">
+        <p>About</p>
+        <p>Work</p>
+        <p>Contact</p>
+    </div>
+
+    <hr class="section-divider">
+
+    /* Banner section */
+    <div class="banner-container">
+        <img class="banner" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIAstjod7_THaAAUWVrytxvyKiuu1VIUHTtnRUhsx7vE6kRMRc">
+        <div class="hover-text">
+            <p>Hey, I'm Avika</p>
+        </div>
+    </div>
+
+    <hr class="section-divider">
+
+    /* About Me Section  */
+    <div class="about">
+
+        <h1>About Me</h1>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Ovq_FEHOMAkobK1Vnr2odYQNLh4X0Oa4be84tyzlkg&s=10" alt="Profile photo">
+
+        <p>
+            I am an undergraduate Student at Chitkara University
+            currently pursuing my B.E. in Software Engineering degree.
+        </p>
+
+        <hr>
+
+        <p style="font-size:larger;">Here's what I have done so far</p>
+
+        /* Portfolio work projects */
+        <div class="portfolio">
+
+            <div class="portfolio-item">
+                <img src="C:\Users\Admin\OneDrive\Pictures\Screenshots\Screenshot 2026-08-21 205118.png" alt="Weather Forecast project">
+                <div class="portfolio-text">
+                    <h3>Weather Forecast Card</h3>
+                    <p>A weather forecast card built with HTML and CSS, showing temperature, humidity, precipitation and wind for Chandigarh.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="C:\Users\Admin\OneDrive\Pictures\Screenshots\Screenshot 2026-08-21 205221.png" alt="Student Registration project">
+                <div class="portfolio-text">
+                    <h3>Student Registration Form</h3>
+                    <p>A student registration form with fields for name, email and password, styled using CSS.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="work-heading">
+        <h1>Gallery</h1>
+    </div>
+
+    /* Gallery images section */
+    <div class="gallery">
+
+        <img src="https://images.pexels.com/photos/31348525/pexels-photo-31348525.jpeg">
+        <img src="https://images.pexels.com/photos/30721917/pexels-photo-30721917.jpeg">
+        <img src="https://images.pexels.com/photos/36732831/pexels-photo-36732831.jpeg">
+        <img src="https://images.pexels.com/photos/8138242/pexels-photo-8138242.jpeg">
+        <img src="https://images.pexels.com/photos/18495176/pexels-photo-18495176.jpeg">
+        <img src="https://images.pexels.com/photos/25538927/pexels-photo-25538927.jpeg">
+        <img src="https://images.pexels.com/photos/31352325/pexels-photo-31352325.jpeg">
+        <img src="https://images.pexels.com/photos/3944104/pexels-photo-3944104.jpeg">
+
+    </div>
+
+    <hr class="section-divider">
+
+</body>
+
+</html>

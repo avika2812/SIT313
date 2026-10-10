@@ -1,0 +1,144 @@
+
+/* Footer styling */
+
+footer {
+  margin-top: 50px;
+  background: #48465f;
+  color: white;
+  padding: 35px 50px 15px;
+}
+
+/* Newsletter section */
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 22px 20px;
+  background-color: #48455f;
+  color: #ffffff;
+}
+
+.newsletter h3 {
+  width: 100%;
+  margin: 0 0 5px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.newsletter input {
+  width: 170px;
+  max-width: 100%;
+  padding: 6px;
+  border: 1px solid #c6c0b3;
+  border-radius: 2px;
+  background-color: #555263;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.newsletter input::placeholder {
+  color: #c8c4c4;
+}
+
+.newsletter button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #c58b59;
+  color: #ffffff;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #a96f43;
+}
+
+/* Footer links */
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin: 0 5%;
+  padding: 18px 0;
+  border-top: 1px solid #c58b59;
+  background-color: #48455f;
+  text-align: center;
+}
+
+.footer-content h4 {
+  margin: 0 0 8px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.footer-content p:hover {
+  color: #e0b58d;
+}
+
+/* Bottom footer */
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 5%;
+  padding: 10px 0;
+  border-top: 1px solid #c58b59;
+  background-color: #48455f;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.footer-bottom div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom span {
+  color: #ffffff;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom span:hover {
+  color: #e0b58d;
+}
+
+/* Responsive footer */
+
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0 5%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom div {
+    justify-content: center;
+  }
+}
