@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2d53c0f394f39fa740be9c50fd62e4300db64bbd
 import {
   signinwithGoogle,
   signinAuthUserWithEmailAndPassword,
