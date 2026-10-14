@@ -1,0 +1,137 @@
+.question-container {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color:antiquewhite;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.question {
+  display: block;
+  background-color:rgb(134, 190, 192);
+  padding: 2px 12px;
+  margin-bottom: 25px;
+}
+
+.question h3 {
+  color: #222222;
+  font-size: 18px;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-style h3 {
+  color: #333333;
+  font-size: 15px;
+  margin: 10px 0 2px;
+}
+
+.form-style input,
+.text-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  
+}
+
+.form-style input:focus,
+.text-input:focus {
+  outline: none;
+  border-color: #078b98;
+  box-shadow: 0 0 4px rgba(7, 139, 152, 0.2);
+}
+
+.text-input {
+  min-height: 190px;
+  resize: vertical;
+}
+
+.abstract-input {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.tags-input {
+  margin-bottom: 10px;
+}
+
+.button-style {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.button-style button {
+  background-color: #078b98;
+  color: white;
+  padding: 11px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-style button:hover {
+  background-color: #066b75;
+}
+
+/*post.jsx css*/
+.post-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.heading {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.form-style p {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.input-style {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.input-style label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+.input-style input {
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .question-container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .button-style button {
+    width: 100%;
+  }
+}
